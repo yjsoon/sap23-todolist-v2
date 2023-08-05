@@ -12,6 +12,7 @@
 		AF2A288F2A7DDB8700A2204B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF2A288E2A7DDB8700A2204B /* Assets.xcassets */; };
 		AF2A28922A7DDB8700A2204B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF2A28912A7DDB8700A2204B /* Preview Assets.xcassets */; };
 		AF2A28992A7DDBC400A2204B /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2A28982A7DDBC400A2204B /* Todo.swift */; };
+		AF2A289B2A7DE28900A2204B /* TodoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2A289A2A7DE28900A2204B /* TodoDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		AF2A288E2A7DDB8700A2204B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF2A28912A7DDB8700A2204B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AF2A28982A7DDBC400A2204B /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		AF2A289A2A7DE28900A2204B /* TodoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				AF2A288A2A7DDB8600A2204B /* Todo_List_V2App.swift */,
 				AF2A288C2A7DDB8600A2204B /* ContentView.swift */,
+				AF2A289A2A7DE28900A2204B /* TodoDetailView.swift */,
 				AF2A28982A7DDBC400A2204B /* Todo.swift */,
 				AF2A288E2A7DDB8700A2204B /* Assets.xcassets */,
 				AF2A28902A7DDB8700A2204B /* Preview Content */,
@@ -143,6 +146,7 @@
 				AF2A288D2A7DDB8600A2204B /* ContentView.swift in Sources */,
 				AF2A28992A7DDBC400A2204B /* Todo.swift in Sources */,
 				AF2A288B2A7DDB8600A2204B /* Todo_List_V2App.swift in Sources */,
+				AF2A289B2A7DE28900A2204B /* TodoDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
