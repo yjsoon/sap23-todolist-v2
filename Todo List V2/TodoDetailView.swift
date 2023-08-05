@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TodoDetailView: View {
     
-    @State var todo = Todo(title: "Do up this view", subtitle: "There's nothing here yet")
+    @Binding var todo: Todo
     
     var body: some View {
         Form {
@@ -24,7 +24,9 @@ struct TodoDetailView: View {
 struct TodoDetailView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
-            TodoDetailView()
+            TodoDetailView(todo:
+                    .constant(Todo(title: "Do up this view", subtitle: "There's nothing here yet"))
+            )
         }
     }
 }
