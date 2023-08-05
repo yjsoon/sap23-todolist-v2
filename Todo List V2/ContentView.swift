@@ -56,6 +56,7 @@ struct ContentView: View {
             }
             .sheet(isPresented: $showNewTodoSheet) {
                 NewTodoView(sourceArray: $todos)
+                    .presentationDetents([.medium, .large])
             }
         }
     }
