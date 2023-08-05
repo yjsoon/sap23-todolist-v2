@@ -8,13 +8,30 @@
 import SwiftUI
 
 struct TodoRowView: View {
+    
+    @Binding var todo: Todo
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Image(systemName: todo.isDone ? "checkmark.circle.fill" : "circle" )
+                .onTapGesture {
+                    todo.isDone.toggle()
+                }
+            VStack(alignment: .leading) {
+                Text(todo.title)
+                    .strikethrough(todo.isDone)
+                if !todo.subtitle.isEmpty {
+                    Text(todo.subtitle)
+                        .font(.caption)
+                        .foregroundStyle(.gray)
+                }
+            }
+        }
     }
 }
 
 struct TodoRowView_Previews: PreviewProvider {
     static var previews: some View {
-        TodoRowView()
+        TodoRowView(todo: .constant(Todo(title: "Fake title todo")))
     }
 }

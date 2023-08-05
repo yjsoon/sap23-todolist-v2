@@ -24,21 +24,7 @@ struct ContentView: View {
                 NavigationLink {
                     TodoDetailView(todo: $todo)
                 } label: {
-                    HStack {
-                        Image(systemName: todo.isDone ? "checkmark.circle.fill" : "circle" )
-                            .onTapGesture {
-                                todo.isDone.toggle()
-                            }
-                        VStack(alignment: .leading) {
-                            Text(todo.title)
-                                .strikethrough(todo.isDone)
-                            if !todo.subtitle.isEmpty {
-                                Text(todo.subtitle)
-                                    .font(.caption)
-                                    .foregroundStyle(.gray)
-                            }
-                        }
-                    }
+                    TodoRowView(todo: $todo)
                 }
             }
             .navigationTitle("Todos")
